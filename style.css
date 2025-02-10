@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Oswald; 
+    scroll-behavior: smooth;
 }
 #section{
     width: 100%;
@@ -111,4 +112,120 @@ nav ul li a:hover{
 }
 .info{
     margin-left: 10px;
+}
+.element{
+    margin-left: 10px;
+}
+
+.skill-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15rem;
+    margin-left: 40px;
+    align-items: center;
+}
+.skill-image{
+    align-items: end;
+}
+.bars{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+.bar-head,.bar-perc{
+    font-weight: 500;
+    font-size: 20px;
+}
+.base-bar{
+    height: 7px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+}
+.html-bar{
+    background-color: chocolate;
+    width: 89%;
+}
+.css-bar{
+    background-color: chocolate;
+    width: 59%;
+}
+.java-bar{
+    background-color: chocolate;
+    width: 80%;
+}
+.mongo-bar{
+    background-color: chocolate;
+    width: 90%;
+}
+.react-bar{
+    background-color: chocolate;
+    width: 75%;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+.anim{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.brand{
+    color: black;
+    font-size: 30px;
+}
+.anim:hover{
+    background-image: linear-gradient(to bottom right, red, yellow);
+    animation: rotate 5s;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+.anim:hover .brand{
+    color: #fff;
+}
+#copy{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.up-arrow{
+    float: right;
+    margin: 0px 30px 30px 0px;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
 }
